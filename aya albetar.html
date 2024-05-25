@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aya Al Betar - Personal Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header {
+            background: #6a1b9a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #fff 3px solid;
+            animation: slideIn 1s ease-in-out;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        section#showcase {
+            min-height: 400px;
+            background: linear-gradient(to right, #6a1b9a, #8e44ad);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        section#showcase h1 {
+            font-size: 55px;
+            margin-top: 100px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        section#showcase p {
+            font-size: 20px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .main-content {
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .main-content h2 {
+            text-align: center;
+            color: #6a1b9a;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .content-block {
+            margin-bottom: 20px;
+        }
+        .content-block h3 {
+            color: #6a1b9a;
+            margin-bottom: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .content-block p, .content-block ul {
+            margin: 0 0 10px 0;
+            line-height: 1.6;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        .content-block ul {
+            padding-left: 20px;
+        }
+        .skills .fa {
+            margin-right: 10px;
+            color: #6a1b9a;
+        }
+        .certificate img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .certificate p {
+            text-align: center;
+            color: #6a1b9a;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        footer {
+            background: #6a1b9a;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 30px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Aya Al Betar</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to My Personal Webpage</h1>
+            <p>With a strong will, a high ability to face challenges and difficulties, and the ability to bear responsibility, in addition to my passion for discovering everything new in the world of technology and programming, I strive to always be the best.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="main-content" id="about">
+            <h2>About Me</h2>
+            <p>Date of Birth: 01/01/2000</p>
+            <p>Nationality: Syrian</p>
+            <p>Home: Homs, Syria</p>
+        </div>
+
+        <div class="main-content" id="experience">
+            <h2>Work Experience</h2>
+            <div class="content-block">
+                <h3>Web Developer at Deaplor</h3>
+                <p>Dubai, United Arab Emirates (01/12/2022 – Current)</p>
+                <ul>
+                    <li>Developing each element of the server side</li>
+                    <li>Writing clean and scalable code</li>
+                    <li>Software testing at different stages of development</li>
+                    <li>Identifying and correcting possible errors</li>
+                    <li>Creating databases</li>
+                    <li>Working with website design</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content" id="education">
+            <h2>Education and Training</h2>
+            <div class="content-block">
+                <h3>Al-Baath University</h3>
+                <p>Bachelor of Software Engineering (15/09/2017 – 24/01/2023)</p>
+                <p>Homs, Syria</p>
+            </div>
+            <div class="content-block">
+                <h3>Web Development Online Training at Deaplor</h3>
+                <p>Dubai, United Arab Emirates (01/08/2022 – 01/12/2022)</p>
+            </div>
+        </div>
+
+        <div class="main-content" id="skills">
+            <h2>Skills</h2>
+            <div class="content-block">
+                <h3>Language Skills</h3>
+                <p><i class="fa fa-language"></i>Mother tongue: Arabic</p>
+                <p>Other languages:</p>
+                <ul>
+                    <li><i class="fa fa-language"></i>English: Independent User (B1)</li>
+                    <li><i class="fa fa-language"></i>German: Basic User (A1)</li>
+                </ul>
+            </div>
+            <div class="content-block">
+                <h3>Digital Skills</h3>
+                <p>
+                    <i class="fa fa-code"></i> Python, 
+                    <i class="fa fa-code"></i> Sails.js, 
+                    <i class="fa fa-database"></i> SQL, 
+                    <i class="fa fa-code"></i> NestJS Framework, 
+                    <i class="fa fa-database"></i> MongoDB, 
+                    <i class="fa fa-code"></i> JavaScript, 
+                    <i class="fa fa-html5"></i> HTML, 
+                    <i class="fa fa-css3-alt"></i> CSS, 
+                    <i class="fa fa-docker"></i> Docker, 
+                    <i class="fa fa-code"></i> Nuxt.js, 
+                    <i class="fa fa-git-alt"></i> Git, 
+                    <i class="fa fa-bitbucket"></i> Bitbucket, 
+                    <i class="fa fa-jira"></i> Atlassian stack (Jira, Confluence), 
+                    <i class="fa fa-code"></i> Some JavaScript
+                </p>
+            </div>
+            <div class="content-block">
+                <h3>Communication and Interpersonal Skills</h3>
+                <p><i class="fa fa-comments"></i> Problem-solving, adaptability, self-development, time management</p>
+            </div>
+        </div>
+
+        <div class="main-content" id="certificates">
+            <h2>Certificates</h2>
+            <div class="certificate">
+                <img src="certificate.jpg" alt="Certificate Image">
+                <p>This certificate indicates that Aya Al Betar has successfully completed the required training and has demonstrated proficiency in the respective field.</p>
+            </div>
+        </div>
+
+        <div class="main-content" id="contact">
+            <h2>Contact</h2>
+            <p><i class="fa fa-envelope"></i> Email: aya2000albetar@gmail.com</p>
+            <p><i class="fa fa-phone"></i> Work: (+963) 947895611</p>
+            <p><i class="fa fa-map-marker-alt"></i> Home: Homs, Syria</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aya Al Betar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
