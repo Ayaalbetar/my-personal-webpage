@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,22 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* لون الخلفية الأساسي */
-            color: #333; /* لون النص الأساسي */
+            background-color: #f4f4f4;
+            /* لون الخلفية الأساسي */
+            color: #333;
+            /* لون النص الأساسي */
         }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
             animation: fadeIn 2s ease-in-out;
         }
+
         header {
-            background-color: #C08C82; /* لون خلفية الشريط العلوي */
+            background-color: #C08C82;
+            /* لون خلفية الشريط العلوي */
             color: white;
             padding: 10px 0;
             text-align: center;
@@ -30,113 +36,161 @@
             animation: slideIn 1s ease-in-out;
             flex-wrap: wrap;
         }
+
         header img {
             vertical-align: middle;
             height: 40px;
             margin-right: 10px;
         }
+
         header h1 {
             margin: 0;
             font-size: 24px;
         }
+
         nav {
             display: flex;
             justify-content: center;
-            background-color: #924F4A; /* لون خلفية الناف بار */
+            background-color: #924F4A;
+            /* لون خلفية الناف بار */
             padding: 10px 0;
             flex-wrap: wrap;
         }
+
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             text-transform: uppercase;
         }
+
         nav a:hover {
-            background-color: #6F403B; /* لون عند تمرير الفأرة */
+            background-color: #6F403B;
+            /* لون عند تمرير الفأرة */
         }
+
         .content {
             padding: 20px;
         }
+
         .welcome {
-            background: linear-gradient(135deg, #C08C82, #F0A6A0); /* تدرج لوني للخلفية */
+            background: linear-gradient(135deg, #C08C82, #F0A6A0);
+            /* تدرج لوني للخلفية */
             color: white;
             padding: 40px;
             text-align: center;
             margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* إضافة ظل */
         }
+
         .main-content {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* إضافة ظل */
             margin-bottom: 20px;
+
         }
+
+        .main-content h2 {
+            text-align: center;
+            /* توسيط العناوين */
+        }
+
         footer {
-            background-color: #C08C82; /* لون خلفية الفوتر */
+            background-color: #C08C82;
+            /* لون خلفية الفوتر */
             color: white;
             text-align: center;
             padding: 30px 20p;
             margin-top: 30px;
             animation: slideIn 1s ease-in-out;
         }
+
         .skills img {
             height: 20px;
             margin-right: 8px;
             vertical-align: middle;
-          
-  
+
+
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes slideIn {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
             }
+
             header img {
                 margin-right: 0;
                 margin-bottom: 10px;
             }
+
             nav {
                 flex-direction: column;
             }
+
             nav a {
                 padding: 10px;
                 text-align: center;
             }
+
             .skills {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
             }
+
             .skills img {
                 margin-bottom: 10px;
             }
         }
+
         @media (max-width: 480px) {
             header h1 {
                 font-size: 20px;
             }
+
             .welcome {
                 padding: 20px;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <img src="logo.jfif" alt="Logo"> <!-- شعارك -->
@@ -153,7 +207,9 @@
     <div class="content">
         <div class="welcome">
             <h2>Welcome to My Personal Webpage</h2>
-            <p>With a strong will, a high ability to face challenges and difficulties, and the ability to bear responsibility, in addition to my passion for discovering everything new in the world of technology and programming, I strive to always be the best.</p>
+            <p>With a strong will, a high ability to face challenges and difficulties, and the ability to bear
+                responsibility, in addition to my passion for discovering everything new in the world of technology and
+                programming, I strive to always be the best.</p>
         </div>
 
         <div class="main-content" id="about">
@@ -203,34 +259,35 @@
                     <li><i class="fa fa-language"></i>German: Basic User (A1)</li>
                 </ul>
             </div>
-            <div class="content-block">
-                <h3>Digital Skills</h3>
+        </div>
+        <div class="main-content" id="skills">
+
+            <h2>Digital Skills</h2>
             <div class="skills">
-                <img src="python-icon.png" alt="Python"> Python
-                <img src="js-icon.png" alt="JavaScript"> JavaScript
-                <img src="html-icon.png" alt="HTML"> HTML
-                <img src="css-icon.png" alt="CSS"> CSS
-                <img src="sql-icon.png" alt="SQL"> SQL
-                <p>
-                    <i class="fa fa-code"></i> Python, 
-                    <i class="fa fa-code"></i> Sails.js, 
-                    <i class="fa fa-database"></i> SQL, 
-                    <i class="fa fa-code"></i> NestJS Framework, 
-                    <i class="fa fa-database"></i> MongoDB, 
-                    <i class="fa fa-code"></i> JavaScript, 
-                    <i class="fa fa-html5"></i> HTML, 
-                    <i class="fa fa-css3-alt"></i> CSS, 
-                    <i class="fa fa-docker"></i> Docker, 
-                    <i class="fa fa-code"></i> Nuxt.js, 
-                    <i class="fa fa-git-alt"></i> Git, 
-                    <i class="fa fa-bitbucket"></i> Bitbucket, 
-                    <i class="fa fa-jira"></i> Atlassian stack (Jira, Confluence), 
-                    <i class="fa fa-code"></i> Some JavaScript
-                </p>
+                <ul>
+                    <li>
+                        <img src="python-icon.png" alt="Python">Python
+                    </li>
+                    <li><img src="js-icon.png" alt="JavaScript"> JavaScript</li>
+                    <li> <img src="html-icon.png" alt="HTML"> HTML</li>
+                    <li> <img src="css.png" alt="CSS"> CSS</li>
+                    <li><img src="sql.png" alt="SQL"> SQL</li>
+                    <li> <img src="mongo.png" alt="mongo"> MongoDB </li>
+                    <li><img src="nestjs.png" alt="nest"> NestJS Framework</li>
+                    <li> <img src="sails.png" alt="sails"> SailsJs Framework</li>
+                    <li> <img src="nuxt.png" alt="nuxt">Nuxtjs Framework</li>
+                    <li> <img src="docker.png" alt="docker"> Docker </li>
+                    <li> <img src="git.png" alt="git">Git</li>
+                    <li> <img src="bitbucket.png" alt="bitbucket">Bitbucket</li>
+                    <li><img src="jira.png" alt="jira">Atlassian stack (Jira, Confluence), </li>
+
+                </ul>
+
             </div>
             <div class="content-block">
                 <h3>Communication and Interpersonal Skills</h3>
                 <p><i class="fa fa-comments"></i> Problem-solving, adaptability, self-development, time management</p>
+
             </div>
         </div>
 
@@ -238,7 +295,8 @@
             <h2>Certificates</h2>
             <div class="certificate">
                 <img src="certificate.jpg" alt="Certificate Image">
-                <p>This certificate indicates that Aya Al Betar has successfully completed the required training and has demonstrated proficiency in the respective field.</p>
+                <p>This certificate indicates that Aya Al Betar has successfully completed the required training and has
+                    demonstrated proficiency in the respective field.</p>
             </div>
         </div>
 
@@ -254,4 +312,5 @@
         <p>&copy; 2024 Aya Al Betar. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
