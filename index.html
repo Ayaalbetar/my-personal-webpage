@@ -96,7 +96,7 @@
 
         .main-content h2 {
             text-align: center;
-            /* توسيط العناوين */
+            color: #ff6b81;
         }
 
         footer {
@@ -104,17 +104,26 @@
             /* لون خلفية الفوتر */
             color: white;
             text-align: center;
-            padding: 30px 20p;
-            margin-top: 30px;
+            padding: 30px 200px;
+            margin-top: 5px;
             animation: slideIn 1s ease-in-out;
         }
 
         .skills img {
             height: 20px;
             margin-right: 8px;
-            vertical-align: middle;
-
-
+            vertical-align: middle
+        }
+    
+        .certificate img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px; /* تحديد أقصى ارتفاع للصورة */
+            display: block;
+            margin: 0  10px; /* إضافة بعض الفراغ أسفل الصورة */
+        }
+        .certificate p {
+            margin-top: 10px;
         }
 
         @keyframes fadeIn {
@@ -252,11 +261,11 @@
             <h2>Skills</h2>
             <div class="content-block">
                 <h3>Language Skills</h3>
-                <p><i class="fa fa-language"></i>Mother tongue: Arabic</p>
+                <p><i class="fa fa-language"></i> Mother Language: Arabic</p>
                 <p>Other languages:</p>
                 <ul>
-                    <li><i class="fa fa-language"></i>English: Independent User (B1)</li>
-                    <li><i class="fa fa-language"></i>German: Basic User (A1)</li>
+                    <li><i class="fa fa-language"></i> English: Independent User (B1)</li>
+                    <li><i class="fa fa-language"></i>  German: Basic User (A1)</li>
                 </ul>
             </div>
         </div>
