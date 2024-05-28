@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aya Al Betar's Personal Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* لون الخلفية الأساسي */
+            color: #333; /* لون النص الأساسي */
+        }
+        header {
+            background-color: #C08C82; /* لون خلفية الشريط العلوي */
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #924F4A; /* لون خلفية الناف بار */
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #6F403B; /* لون عند تمرير الفأرة */
+        }
+        .content {
+            padding: 20px;
+        }
+        .welcome {
+            background: linear-gradient(135deg, #C08C82, #F0A6A0); /* تدرج لوني للخلفية */
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #C08C82; /* لون خلفية الفوتر */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .skills img {
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            header img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+                text-align: center;
+            }
+            .skills {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .skills img {
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 20px;
+            }
+            .welcome {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo"> <!-- شعارك -->
+        <h1>Aya Al Betar</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="welcome">
+            <h2>Welcome to My Personal Webpage</h2>
+            <p>With a strong will, a high ability to face challenges and difficulties, and the ability to bear responsibility, in addition to my passion for discovering everything new in the world of technology and programming, I strive to always be the best.</p>
+        </div>
+
+        <div class="main-content" id="about">
+            <h2>About Me</h2>
+            <p>Date of birth: 01/01/2000</p>
+            <p>Nationality: Syrian</p>
+        </div>
+
+        <div class="main-content" id="work">
+            <h2>Work Experience</h2>
+            <h3>Web Developer at Dealplor</h3>
+            <p>Dubai, United Arab Emirates</p>
+            <ul>
+                <li>Developing each element of the server side</li>
+                <li>Writing clean and scalable code</li>
+                <li>Software testing at different stages of development</li>
+                <li>Identifying and correcting possible errors</li>
+                <li>Creating databases</li>
+                <li>Working with website design</li>
+            </ul>
+        </div>
+
+        <div class="main-content" id="education">
+            <h2>Education and Training</h2>
+            <h3>Al-Baath University</h3>
+            <p>Bachelor of Software Engineering</p>
+            <p>Homs, Syria</p>
+        </div>
+
+        <div class="main-content" id="skills">
+            <h2>Skills</h2>
+            <h3>Language Skills</h3>
+            <p>Mother tongue: Arabic</p>
+            <p>Other languages: English (B1), German (A1)</p>
+
+            <h3>Digital Skills</h3>
+            <div class="skills">
+                <img src="python-icon.png" alt="Python"> Python
+                <img src="js-icon.png" alt="JavaScript"> JavaScript
+                <img src="html-icon.png" alt="HTML"> HTML
+                <img src="css-icon.png" alt="CSS"> CSS
+                <img src="sql-icon.png" alt="SQL"> SQL
+                <!-- أضف أيقونات إضافية حسب الحاجة -->
+            </div>
+        </div>
+
+        <div class="main-content" id="certificates">
+            <h2>Certificates</h2>
+            <div class="certificate">
+                <img src="certificate.jpg" alt="Certificate Image">
+                <p>This certificate indicates that Aya Al Betar has successfully completed the required training and has demonstrated proficiency in the respective field.</p>
+            </div>
+        </div>
+
+        <div class="main-content" id="contact">
+            <h2>Contact</h2>
+            <p><i class="fa fa-envelope"></i> Email: aya2000albetar@gmail.com</p>
+            <p><i class="fa fa-phone"></i> Work: (+963) 947895611</p>
+            <p><i class="fa fa-map-marker-alt"></i> Home: Homs, Syria</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aya Al Betar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
