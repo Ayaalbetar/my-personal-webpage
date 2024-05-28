@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aya Al Betar - Personal Webpage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <style> 
+    <title>Aya Al Betar's Personal Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f4f4f4; /* لون الخلفية الأساسي */
+            color: #333; /* لون النص الأساسي */
         }
         .container {
             width: 80%;
@@ -20,101 +20,73 @@
             animation: fadeIn 2s ease-in-out;
         }
         header {
-            background: #6a1b9a;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #fff 3px solid;
+            background-color: #C08C82; /* لون خلفية الشريط العلوي */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             animation: slideIn 1s ease-in-out;
+            flex-wrap: wrap;
         }
-        header a {
-            color: #fff;
+        header img {
+            vertical-align: middle;
+            height: 40px;
+            margin-right: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #924F4A; /* لون خلفية الناف بار */
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 16px;
         }
-        header ul {
-            padding: 0;
-            list-style: none;
+        nav a:hover {
+            background-color: #6F403B; /* لون عند تمرير الفأرة */
         }
-        header li {
-            float: right;
-            display: inline;
-            padding: 0 20px 0 20px;
+        .content {
+            padding: 20px;
         }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        section#showcase {
-            min-height: 400px;
-            background: linear-gradient(to right, #6a1b9a, #8e44ad);
-            color: #fff;
+        .welcome {
+            background: linear-gradient(135deg, #C08C82, #F0A6A0); /* تدرج لوني للخلفية */
+            color: white;
+            padding: 40px;
             text-align: center;
-            padding: 50px 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        section#showcase h1 {
-            font-size: 55px;
-            margin-top: 100px;
-            animation: fadeInUp 1s ease-in-out;
-        }
-        section#showcase p {
-            font-size: 20px;
-            animation: fadeInUp 1.5s ease-in-out;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
         }
         .main-content {
-            background: #fff;
-            color: #333;
+            background-color: #fff;
             padding: 20px;
-            margin: 20px 0;
-        }
-        .main-content h2 {
-            text-align: center;
-            color: #6a1b9a;
-            animation: fadeInUp 1s ease-in-out;
-        }
-        .content-block {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
             margin-bottom: 20px;
         }
-        .content-block h3 {
-            color: #6a1b9a;
-            margin-bottom: 10px;
-            animation: fadeInUp 1.5s ease-in-out;
-        }
-        .content-block p, .content-block ul {
-            margin: 0 0 10px 0;
-            line-height: 1.6;
-            animation: fadeInUp 2s ease-in-out;
-        }
-        .content-block ul {
-            padding-left: 20px;
-        }
-        .skills .fa {
-            margin-right: 10px;
-            color: #6a1b9a;
-        }
-        .certificate img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-        }
-        .certificate p {
-            text-align: center;
-            color: #6a1b9a;
-            font-style: italic;
-            margin-top: 10px;
-        }
         footer {
-            background: #6a1b9a;
-            color: #fff;
+            background-color: #C08C82; /* لون خلفية الفوتر */
+            color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 30px 20p;
             margin-top: 30px;
             animation: slideIn 1s ease-in-out;
+        }
+        .skills img {
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+          
+  
         }
 
         @keyframes fadeIn {
@@ -131,45 +103,70 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            header img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+                text-align: center;
+            }
+            .skills {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .skills img {
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 20px;
+            }
+            .welcome {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Aya Al Betar</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img src="logo.jfif" alt="Logo"> <!-- شعارك -->
+        <h1>Aya Al Betar</h1>
     </header>
-    
-    <section id="showcase">
-        <div class="container">
-            <h1>Welcome to My Personal Webpage</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="welcome">
+            <h2>Welcome to My Personal Webpage</h2>
             <p>With a strong will, a high ability to face challenges and difficulties, and the ability to bear responsibility, in addition to my passion for discovering everything new in the world of technology and programming, I strive to always be the best.</p>
         </div>
-    </section>
 
-    <div class="container">
         <div class="main-content" id="about">
             <h2>About Me</h2>
-            <p>Date of Birth: 01/01/2000</p>
+            <p>Date of birth: 01/01/2000</p>
             <p>Nationality: Syrian</p>
             <p>Home: Homs, Syria</p>
         </div>
 
-        <div class="main-content" id="experience">
+        <div class="main-content" id="work">
             <h2>Work Experience</h2>
             <div class="content-block">
-                <h3>Web Developer at Deaplor</h3>
+                <h3>Web Developer at Dealplor</h3>
                 <p>Dubai, United Arab Emirates (01/12/2022 – Current)</p>
                 <ul>
                     <li>Developing each element of the server side</li>
@@ -208,6 +205,12 @@
             </div>
             <div class="content-block">
                 <h3>Digital Skills</h3>
+            <div class="skills">
+                <img src="python-icon.png" alt="Python"> Python
+                <img src="js-icon.png" alt="JavaScript"> JavaScript
+                <img src="html-icon.png" alt="HTML"> HTML
+                <img src="css-icon.png" alt="CSS"> CSS
+                <img src="sql-icon.png" alt="SQL"> SQL
                 <p>
                     <i class="fa fa-code"></i> Python, 
                     <i class="fa fa-code"></i> Sails.js, 
